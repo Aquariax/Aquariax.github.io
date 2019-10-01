@@ -134,12 +134,10 @@ body .document {
   background: linear-gradient(45deg, #051b96, transparent), repeating-linear-gradient(45deg, #0076fd 0%, #04cc9a 5%, transparent 5%, transparent 10%, #04cc9a 10%, rgba(4, 204, 154, 0.5) 11%, transparent 11%, transparent 13%), #031bf5 repeating-linear-gradient(-45deg, rgba(0, 118, 253, 0.5) 0%, rgba(4, 204, 154, 0.5) 5%, transparent 5%, transparent 10%);
   display: flex;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body .document {
     width: 100%;
     flex-direction: column;
-    overflow: hidden;
-    margin: 0 auto;
   }
 }
 body .document .sidebar {
@@ -154,7 +152,7 @@ body .document .sidebar .hobbies p {
   font-size: 20px;
   font-weight: bold;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body .document .sidebar {
     width: 100%;
     padding: 1%;
@@ -177,7 +175,7 @@ body .document .main {
   width: 85%;
   background-color: white;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body .document .main {
     width: 100%;
   }
@@ -222,6 +220,11 @@ body .document .main .heading #social {
 body .document .main .heading #social p {
   margin: 1%;
 }
+@media (max-width: 500px) {
+  body .document .main .heading #social {
+    flex-direction: column;
+  }
+}
 body .document .main #skills .list1 {
   display: flex;
   flex-wrap: wrap;
@@ -250,7 +253,7 @@ body .document .main .summary {
   text-align: center;
   font-size: 17px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body .document .main .summary {
     width: 93%;
     padding: 10px;
@@ -263,7 +266,7 @@ body .document .main #work {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body .document .main #work {
     width: 100%;
     flex-direction: column-reverse;
@@ -274,7 +277,7 @@ body .document .main #work .previous {
   margin: 10px;
   width: 48%;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body .document .main #work .previous {
     width: 90%;
     text-align: center;
