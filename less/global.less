@@ -1,5 +1,6 @@
 body{
     background-color: grey;
+    width: 100%;
     .document{
         margin: 0 auto;
         width: 70%;
@@ -12,7 +13,9 @@ body{
             width: 100%;
             flex-direction: column;
             overflow: hidden;
+            margin: 0 auto;
         }
+        
         .sidebar{
             width:15%;
             margin: 10px;
@@ -20,6 +23,13 @@ body{
             padding-top: 8%;
             height:100%;
             color: white;
+            .hobbies{
+                p{
+                  font-size: 20px; 
+                  font-weight: bold;
+                }
+                
+            }
             @media @mobile{
                 width: 100%;
                 padding: 1%;
@@ -80,20 +90,15 @@ body{
                 #social{
                     display: flex;
                     justify-content: center;
+                    margin-top: 10px;
                     p{
-                    margin: 2%;
-                    }
-                    @media @mobile{
-                        width: 90%;
-                        margin: 3%;
-                        padding: 2%;
-                        font-size: 15px;
-                    }
-                    
+                    margin: 1%;
+                    }                    
                 }
         
             }
             #skills{
+
                 .list1{
                     display: flex;
                     flex-wrap: wrap;
@@ -123,7 +128,7 @@ body{
                 text-align: center;
                 font-size: 17px;
                 @media @mobile{
-                    width: 90%;
+                    width: 93%;
                     padding: 10px;
                     margin: 0 auto;
                 }
@@ -142,7 +147,7 @@ body{
                     margin: 10px;
                     width:48%;
                     @media @mobile{
-                        width: 92%; 
+                        width: 90%; 
                         text-align: center;
                         padding: none;
                     }
@@ -176,6 +181,5 @@ body{
                 }
             }
         }
-     
     }
 }

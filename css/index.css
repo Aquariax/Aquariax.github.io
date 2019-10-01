@@ -126,6 +126,7 @@ table {
 /* Set every element's box-sizing to border-box */
 body {
   background-color: grey;
+  width: 100%;
 }
 body .document {
   margin: 0 auto;
@@ -138,6 +139,7 @@ body .document {
     width: 100%;
     flex-direction: column;
     overflow: hidden;
+    margin: 0 auto;
   }
 }
 body .document .sidebar {
@@ -147,6 +149,10 @@ body .document .sidebar {
   padding-top: 8%;
   height: 100%;
   color: white;
+}
+body .document .sidebar .hobbies p {
+  font-size: 20px;
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   body .document .sidebar {
@@ -211,17 +217,10 @@ body .document .main .heading #contact p {
 body .document .main .heading #social {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 body .document .main .heading #social p {
-  margin: 2%;
-}
-@media (max-width: 500px) {
-  body .document .main .heading #social {
-    width: 90%;
-    margin: 3%;
-    padding: 2%;
-    font-size: 15px;
-  }
+  margin: 1%;
 }
 body .document .main #skills .list1 {
   display: flex;
@@ -253,7 +252,7 @@ body .document .main .summary {
 }
 @media (max-width: 500px) {
   body .document .main .summary {
-    width: 90%;
+    width: 93%;
     padding: 10px;
     margin: 0 auto;
   }
@@ -277,7 +276,7 @@ body .document .main #work .previous {
 }
 @media (max-width: 500px) {
   body .document .main #work .previous {
-    width: 92%;
+    width: 90%;
     text-align: center;
     padding: none;
   }
