@@ -132,7 +132,13 @@ body .document {
   width: 70%;
   background: linear-gradient(45deg, #051b96, transparent), repeating-linear-gradient(45deg, #0076fd 0%, #04cc9a 5%, transparent 5%, transparent 10%, #04cc9a 10%, rgba(4, 204, 154, 0.5) 11%, transparent 11%, transparent 13%), #031bf5 repeating-linear-gradient(-45deg, rgba(0, 118, 253, 0.5) 0%, rgba(4, 204, 154, 0.5) 5%, transparent 5%, transparent 10%);
   display: flex;
-  overflow: hidden;
+}
+@media (max-width: 500px) {
+  body .document {
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+  }
 }
 body .document .sidebar {
   width: 15%;
@@ -141,6 +147,12 @@ body .document .sidebar {
   padding-top: 8%;
   height: 100%;
   color: white;
+}
+@media (max-width: 500px) {
+  body .document .sidebar {
+    width: 100%;
+    padding: 1%;
+  }
 }
 body .document .sidebar h3 {
   font-size: 25px;
@@ -158,6 +170,11 @@ body .document .sidebar p {
 body .document .main {
   width: 85%;
   background-color: white;
+}
+@media (max-width: 500px) {
+  body .document .main {
+    width: 100%;
+  }
 }
 body .document .main .header1 {
   font-size: 25px;
@@ -185,39 +202,47 @@ body .document .main .heading .full-heading h2 {
   padding: 15px;
   color: white;
 }
-body .document .main .heading .contact {
+body .document .main .heading #contact {
   margin: 1%;
 }
-body .document .main .heading .contact p {
+body .document .main .heading #contact p {
   font-size: 20px;
 }
-body .document .main .heading .social {
+body .document .main .heading #social {
   display: flex;
   justify-content: center;
 }
-body .document .main .heading .social p {
+body .document .main .heading #social p {
   margin: 2%;
 }
-body .document .main .skills .list1 {
+@media (max-width: 500px) {
+  body .document .main .heading #social {
+    width: 90%;
+    margin: 3%;
+    padding: 2%;
+    font-size: 15px;
+  }
+}
+body .document .main #skills .list1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-body .document .main .skills .list1 li {
+body .document .main #skills .list1 li {
   margin: 2%;
 }
-body .document .main .skills .list2 {
+body .document .main #skills .list2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-body .document .main .skills .list2 li {
+body .document .main #skills .list2 li {
   margin: 2%;
 }
-body .document .main .skills .list2 .skill-highlights {
+body .document .main #skills .list2 .skill-highlights {
   color: #0c54be;
 }
-body .document .main .skills .header1 {
+body .document .main #skills .header1 {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
@@ -226,39 +251,59 @@ body .document .main .summary {
   text-align: center;
   font-size: 17px;
 }
-body .document .main .work {
+@media (max-width: 500px) {
+  body .document .main .summary {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
+body .document .main #work {
   line-height: 25px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-body .document .main .work .previous {
+@media (max-width: 500px) {
+  body .document .main #work {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+body .document .main #work .previous {
   padding: 10px;
   margin: 10px;
   width: 48%;
 }
-body .document .main .work .previous h3 {
+@media (max-width: 500px) {
+  body .document .main #work .previous {
+    width: 92%;
+    text-align: center;
+    padding: none;
+  }
+}
+body .document .main #work .previous h3 {
   font-size: 20px;
   margin: 10px;
   font-weight: bold;
 }
-body .document .main .work .previous h4 {
+body .document .main #work .previous h4 {
   font-weight: bold;
   font-size: 18px;
 }
-body .document .main .work .previous p {
+body .document .main #work .previous p {
   padding: 5px;
 }
-body .document .main .work .previous .date {
+body .document .main #work .previous .date {
   font-weight: bold;
 }
-body .document .main .work .previous .projects {
+body .document .main #work .previous .projects {
   border: 3px solid #003cff;
   height: 280px;
   padding: 10px;
   text-align: left;
 }
-body .document .main .work .previous .projects h2 {
+body .document .main #work .previous .projects h2 {
   font-weight: bold;
   font-size: 25px;
   text-decoration: underline;
