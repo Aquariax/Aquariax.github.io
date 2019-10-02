@@ -141,6 +141,12 @@ body .document {
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  body .document {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 body .document .sidebar {
   width: 15%;
   margin: 10px;
@@ -157,6 +163,13 @@ body .document .sidebar .hobbies p {
   body .document .sidebar {
     width: 100%;
     padding: 1%;
+  }
+}
+@media (max-width: 800px) {
+  body .document .sidebar {
+    width: 100%;
+    padding: 1%;
+    margin: 0%;
   }
 }
 body .document .sidebar h3 {
@@ -177,6 +190,11 @@ body .document .main {
   background-color: white;
 }
 @media (max-width: 500px) {
+  body .document .main {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
   body .document .main {
     width: 100%;
   }
