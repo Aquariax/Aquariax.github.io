@@ -141,13 +141,13 @@ body .document {
     flex-direction: column;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   body .document {
     width: 100%;
     flex-direction: column;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1370px) {
   body .document {
     width: 100%;
   }
@@ -170,16 +170,16 @@ body .document .sidebar .hobbies p {
     padding: 1%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1370px) {
+  body .document .sidebar {
+    width: 17%;
+  }
+}
+@media (max-width: 850px) {
   body .document .sidebar {
     width: 100%;
     padding: 1%;
     margin: 0%;
-  }
-}
-@media (max-width: 1000px) {
-  body .document .sidebar {
-    width: 17%;
   }
 }
 body .document .sidebar h3 {
@@ -204,7 +204,7 @@ body .document .main {
     width: 100%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   body .document .main {
     width: 100%;
   }
