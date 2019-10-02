@@ -127,7 +127,6 @@ table {
 body {
   background-color: grey;
   width: 100%;
-  overflow: hidden;
 }
 body .document {
   margin: 0 auto;
