@@ -147,6 +147,11 @@ body .document {
     flex-direction: column;
   }
 }
+@media (max-width: 1000px) {
+  body .document {
+    width: 100%;
+  }
+}
 body .document .sidebar {
   width: 15%;
   margin: 10px;
@@ -170,6 +175,11 @@ body .document .sidebar .hobbies p {
     width: 100%;
     padding: 1%;
     margin: 0%;
+  }
+}
+@media (max-width: 1000px) {
+  body .document .sidebar {
+    width: 17%;
   }
 }
 body .document .sidebar h3 {
