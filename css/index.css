@@ -141,7 +141,7 @@ body .document {
     flex-direction: column;
   }
 }
-@media (max-width: 1370px) {
+@media (max-width: 1000px) {
   body .document {
     width: 100%;
   }
@@ -170,9 +170,9 @@ body .document .sidebar .hobbies p {
     padding: 1%;
   }
 }
-@media (max-width: 1370px) {
+@media (max-width: 1000px) {
   body .document .sidebar {
-    width: 100%;
+    width: 17%;
   }
 }
 @media (max-width: 850px) {
